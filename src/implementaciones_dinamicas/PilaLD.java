@@ -1,6 +1,6 @@
 package implementaciones_dinamicas;
 
-import interfaces.PilaTDA;
+import API.PilaTDA;
 
 /*
  * La estrategia entonces ser´a mantener una cadena de nodos, manteniendo un puntero al tope de la pila, este apuntar´a al siguiente, y as sucesivamente. Si la lista
@@ -15,17 +15,15 @@ public class PilaLD implements PilaTDA {
 
 	@Override
 	public void InicializarPila() {
-		// TODO Auto-generated method stub
-		primero = null ;
+		primero = null;
 		
 	}
 
 	@Override
 	public void Apilar(int x) {
-		// TODO Auto-generated method stub
 		Nodo aux = new Nodo ();
-		aux . info = x;
-		aux . sig = primero;
+		aux.info = x;
+		aux.sig = primero;
 		primero = aux ;
 
 		
@@ -33,20 +31,17 @@ public class PilaLD implements PilaTDA {
 
 	@Override
 	public void Desapilar() {
-		// TODO Auto-generated method stub
-		primero = primero.sig ;
+		primero = primero.sig;
 		
 	}
 
 	@Override
 	public boolean PilaVacia() {
-		// TODO Auto-generated method stub
-		return ( primero == null ) ;
+		return(primero == null);
 	}
 
 	@Override
 	public int Tope() {
-		// TODO Auto-generated method stub
 		return primero.info ;
 	}
 

@@ -1,7 +1,7 @@
 package implementaciones_dinamicas;
 
-import interfaces.ConjuntoTDA;
-import interfaces.DiccionarioMultipleTDA;
+import API.ConjuntoTDA;
+import API.DiccionarioMultipleTDA;
 
 public class DicMultipleL implements DiccionarioMultipleTDA {
 

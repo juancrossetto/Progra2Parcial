@@ -1,6 +1,6 @@
 package implementaciones_dinamicas;
 
-import interfaces.ConjuntoTDA;
+import API.ConjuntoTDA;
 
 /*
  * Para implementar el conjunto, a diferencia de las otras estructuras, no hay orden,

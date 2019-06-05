@@ -1,6 +1,6 @@
 package implementaciones_estaticas;
 
-import interfaces.ConjuntoTDA;
+import API.ConjuntoTDA;
 
 /*
  * A continuaci´on vamos a llevar a cabo la implementaci´on del TDA de conjuntos,

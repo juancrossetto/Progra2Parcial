@@ -4,9 +4,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import API.ConjuntoTDA;
 import implementaciones_dinamicas.DicMultipleL;
 import implementaciones_estaticas.DicMultipleA;
-import interfaces.ConjuntoTDA;
 
 public class DiccionarioMultipleTest {
 	

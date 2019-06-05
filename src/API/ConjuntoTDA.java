@@ -1,7 +1,7 @@
 /**
  * 
  */
-package interfaces;
+package API;
 
 /**
  * El conjunto es una estructura que nos permite guardar elementos sin que los
@@ -14,16 +14,28 @@ package interfaces;
  */
 public interface ConjuntoTDA {
 
-	void InicializarConjunto();
-	// siempre que el conjunto este inicializado
+	void InicializarConjunto ();
+	// siempre que el conjunto estee inicializado
+	//Determino las variables para usar en el conjunto y las pongo en su valor minimo
+	
 	boolean ConjuntoVacio();
 	// siempre que el conjunto este inicializado
+	//Devuelve true si no tiene nodos con valores en el conjunto, si no false
+	
 	void Agregar(int x);
-	// siempre que el conjunto este inicializado y no este vaco
+	// siempre que el conjunto este inicializado y no este vacio
+	//Agrega un nodo con valor en el conjunto, si este valor no existe 
+	
 	int Elegir();
 	// siempre que el conjunto este inicializado
+	//Devuelve el valor de su ultimo nodo agregado
+	
 	void Sacar(int x);
-	// siempre que el conjunto este inicializado
-	boolean Pertenece( int x);
+	// siempre que el conjunto este inicializado y no vacio
+	//elimina el nodo que tiene ese valor
+	
+	boolean Pertenece(int x);
+	// siempre que el conjunto este inicializado y no vacio
+	//devuelve true si el valor recibido existe en el conjunto
 
 }

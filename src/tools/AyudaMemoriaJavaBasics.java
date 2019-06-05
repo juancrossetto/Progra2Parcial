@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ejecutables;
+package tools;
 
 /**
  * @author fbarabasch

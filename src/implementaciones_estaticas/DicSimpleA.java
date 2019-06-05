@@ -1,8 +1,8 @@
 package implementaciones_estaticas;
 
 
-import interfaces.ConjuntoTDA;
-import interfaces.DiccionarioSimpleTDA;
+import API.ConjuntoTDA;
+import API.DiccionarioSimpleTDA;
 
 /*A continuaci´on vamos a llevar a cabo la implementaci´on de los TDA de diccionarios, a partir de la utilizaci´on de arreglos. En el caso del diccionarioSimple
 se emplea un ´unico arreglo de elementos que se definen por una clave y un valor.

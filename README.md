@@ -3,10 +3,10 @@ Repo with files to do the parcial.
 
 PARCIAL 2 Puntos:
 TP1:
-	4 C
-	4 E
-	4 F
-	6 COMPLETO
+	4 C   							YA ESTA (Preguntar si esta bien porque no entendi lo de auxiliar)
+	4 E 							YA ESTA (Lo saque del PDF)
+	4 F 							YA ESTA
+	6 COMPLETO(A Y B)			A:	YA ESTA (Preguntar si esta bien Y probarlo, falta imprimir resultado)		
 
 TP2: 6 COMPLETO
 

@@ -1,12 +1,6 @@
 package implementaciones_dinamicas;
 
-/*
- * 
- * o implementar el TDA manteniendo la cadena de nodos ordenada primero
-por prioridad y luego por orden de entrada, manteniendo un puntero al elemento
-con mayor prioridad, que es el primero que se deber´a eliminar.*/
-
-import interfaces.ColaPrioridadTDA;
+import API.ColaPrioridadTDA;
 
 public class ColaPrioridadLD implements ColaPrioridadTDA {
 

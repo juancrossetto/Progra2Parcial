@@ -1,7 +1,7 @@
 package implementaciones_estaticas;
 
-import interfaces.ConjuntoTDA;
-import interfaces.DiccionarioMultipleTDA;
+import API.ConjuntoTDA;
+import API.DiccionarioMultipleTDA;
 
 public class DicMultipleA implements DiccionarioMultipleTDA {
 

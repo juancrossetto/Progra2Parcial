@@ -1,6 +1,6 @@
 package implementaciones_estaticas;
 
-import interfaces.ColaTDA;
+import API.ColaTDA;
 
 /*
  * Primer elemento ingresado a la cola en la posici´on inicial del

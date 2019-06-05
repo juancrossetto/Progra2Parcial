@@ -1,6 +1,6 @@
 package  implementaciones_estaticas;
 
-import interfaces.PilaTDA;
+import API.PilaTDA;
 
 /*
  * Estrategia 1: Implementaci´on en donde se guardan los datos en un arreglo y

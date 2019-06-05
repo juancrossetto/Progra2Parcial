@@ -1,6 +1,6 @@
 package implementaciones_estaticas;
 
-import interfaces.ColaPrioridadTDA;
+import API.ColaPrioridadTDA;
 
 /*
  * Otra opci´on de implementaci´on de las colas de prioridades es

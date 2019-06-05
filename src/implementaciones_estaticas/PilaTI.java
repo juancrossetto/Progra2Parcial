@@ -1,6 +1,6 @@
 package implementaciones_estaticas;
 
-import interfaces.PilaTDA;
+import API.PilaTDA;
 
 /*
  * Otra variante de implementaci´on es utilizar tambi´en un arreglo

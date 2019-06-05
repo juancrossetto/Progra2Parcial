@@ -1,15 +1,7 @@
 package implementaciones_dinamicas;
 
-/*
- * Para implementar los diccionarios, como en el caso del conjunto no hay necesidad
-mentener un orden, por lo tanto la estrategia es simplemente mantener la cadena
-de nodos y siempre se deber´a recorrerla para buscar un elemento o eliminarlo.
- * 
- * 
- * */
-
-import interfaces.ConjuntoTDA;
-import interfaces.DiccionarioSimpleTDA;
+import API.ConjuntoTDA;
+import API.DiccionarioSimpleTDA;
 
 public class DicSimpleL implements DiccionarioSimpleTDA  {
 	

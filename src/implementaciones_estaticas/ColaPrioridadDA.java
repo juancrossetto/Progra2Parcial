@@ -1,6 +1,6 @@
 package implementaciones_estaticas;
 
-import interfaces.ColaPrioridadTDA;
+import API.ColaPrioridadTDA;
 
 /*
  * Consideramos como estructuras dos arreglos, en uno de ellos
