@@ -51,7 +51,7 @@ public class Ejercicio6a {
             cp2.Desacolar();
         }
 
-        System.out.println("Nueva Cola: ");//falta imprimir
-        UtilidadesColaPrioridad.ImprimirColaPrioridad(nueva);
+//        UtilidadesColaPrioridad.ImprimirColaPrioridad(nueva);
+        UtilidadesColaPrioridad.ImprimirColaPrioridadConTexto("Nueva Cola: ", nueva);
     }
 }

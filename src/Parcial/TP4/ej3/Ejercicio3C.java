@@ -2,6 +2,7 @@ package Parcial.TP4.ej3;
 
 import API.ABBTDA;
 import implementaciones_dinamicas.*;
+import tools.UtilidadesArbolBinario;
 
 public class Ejercicio3C {
 
@@ -19,23 +20,11 @@ public class Ejercicio3C {
         a.AgregarElem(10);
         a.AgregarElem(15);
 
-
-        int profundidad = Ejercicio3C.calcularProfundidad(a, 15);
-
-        System.out.println("La profundidad es:"+profundidad);
-
+        /*La profundidad es, dado un elemento, la altura desde la raiz a ese 
+       elemento(sin contar ese elemento), si el elemento es raiz, la prof seria 0*/
+        int profundidad = UtilidadesArbolBinario.calcularProfundidad(a, 15);
+        System.out.println("La profundidad es: "+ profundidad);
     }
 
-    public static  int calcularProfundidad(ABBTDA t, int x) {
-        if (t.ArbolVacio()) {
-            return 0;
-        } else if (t.Raiz()==x) {
-            return 0;
-        }
-        if (t.Raiz() > x) {
-            return (1 + calcularProfundidad(t.HijoIzq(), x));
-        } else {
-            return (1 + calcularProfundidad(t.HijoDer(), x));
-        }
-    }
+    
 }

@@ -89,14 +89,15 @@ public class UtilidadesCola {
 	    	mitad--;
     	}
     	// Retorna 0 si el numero es par y 1 si es impar
-    	if (( cant %2) != 0) {
-    	aux1 . Desacolar ();
+    	if(( cant %2) != 0){
+    		aux1.Desacolar();
     	}
+    	
     	while(!p.PilaVacia() && ! aux1.ColaVacia()) {
 	    	if (p.Tope () != aux1.Primero()){
-	    		return false ;
+	    		return false;
 	    	}	
-	    	p.Desapilar() ;
+	    	p.Desapilar();
 	    	aux1.Desacolar();
     	}
     	return (p.PilaVacia() && aux1.ColaVacia());

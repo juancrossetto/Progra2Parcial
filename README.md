@@ -3,22 +3,41 @@ Repo with files to do the parcial.
 
 PARCIAL 2 Puntos:
 TP1:
-	4 C   							YA ESTA (Preguntar si esta bien porque no entendi lo de auxiliar)
-	4 E 							YA ESTA (Lo saque del PDF)
+	4 C   							YA ESTA
+	4 E 							YA ESTA
 	4 F 							YA ESTA
 	6 COMPLETO(A Y B)			A:	YA ESTA 		
 								B:  YA ESTA
-TP2: 6 COMPLETO
+TP2: 6 COMPLETO				 UNION: YA ESTA
+					  INTERSECCIÓN: YA ESTA
+						DIFERENCIA: YA ESTA
 
 TP3: 
 	1 B
 	1 D
 	2 A
-	3 (TODO HASTA EL D INCLUSIVE)
+	3 (TODO HASTA EL D INCLUSIVE)  A YA ESTA
+								   B YA ESTA (mismo que el A)
+								   C YA ESTA
+								   D YA ESTA
+	
 	5 COMPLETO
 
+
 TP4:
-	3 (DESDE EL 'A' HASTA EL 'L')
+	3 (DESDE EL 'A' HASTA EL 'L') A: YA ESTA
+								  B: YA ESTA
+								  C: YA ESTA
+								  D: YA ESTA
+								  E: YA ESTA
+								  F: YA ESTA
+								  G: YA ESTA
+								  H: YA ESTA 
+								  I: YA ESTA
+								  J: YA ESTA
+								  K: YA ESTA
+								  L: YA ESTA
+
 
 
 T:\ SRC (lo vamos a llamar con nuestro nombre) --> API
@@ -48,7 +67,7 @@ D	Intersección	Intersección
 
 
 
-
+--------------------------------------------------------------------
 
 
 5-1.A

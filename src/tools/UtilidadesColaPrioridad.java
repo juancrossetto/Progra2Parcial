@@ -1,7 +1,10 @@
 package tools;
 
+import java.util.Arrays;
+
 import API.ColaPrioridadTDA;
 import implementaciones_dinamicas.ColaPrioridadLD;
+import implementaciones_estaticas.ColaPrioridadAO;
 
 public class UtilidadesColaPrioridad {
 
@@ -38,4 +41,40 @@ public class UtilidadesColaPrioridad {
             aux.Desacolar();
         }
     }
+    
+	public static void ImprimirColaPrioridadConTexto(String text ,  ColaPrioridadTDA cola){
+		ColaPrioridadTDA aux = new ColaPrioridadAO();
+		aux.InicializarCola();
+		aux = CopiarColaPrioridad(cola);
+		int[] out = new int[10];
+		int n = 0;
+		while(!aux.ColaVacia()){
+			out[n] = aux.Primero();
+			aux.Desacolar();
+			n++;
+		}
+		System.out.println(text + Arrays.toString(out));
+	}
+	
+	public static ColaPrioridadTDA CopiarColaPrioridad(ColaPrioridadTDA cola){
+		ColaPrioridadTDA caux = new ColaPrioridadAO();
+		ColaPrioridadTDA caux2 = new ColaPrioridadAO();
+		caux.InicializarCola();
+		caux2.InicializarCola();
+
+		while(!cola.ColaVacia()){
+			caux.AcolarPrioridad(cola.Primero(), cola.Prioridad());
+			caux2.AcolarPrioridad(cola.Primero(), cola.Prioridad() );
+			cola.Desacolar();
+		}
+
+		cola.InicializarCola();
+
+		while(!caux.ColaVacia()){
+			cola.AcolarPrioridad(caux.Primero(), caux.Prioridad());//dejo el origen como estaba.
+			caux.Desacolar();
+
+		}
+		return caux2;
+	}
 }

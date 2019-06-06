@@ -1,6 +1,7 @@
 package tools;
 
 import API.*;
+import implementaciones_estaticas.ColaPU;
 import implementaciones_estaticas.PilaTF;
 
 public class UtilidadesPila {
@@ -43,4 +44,85 @@ public class UtilidadesPila {
             aux.Desapilar();
         }
     }
+    
+    public static void Pila(PilaTDA pila) {
+		ColaTDA colaAux = new ColaPU();
+		colaAux.InicializarCola();
+
+		while (!pila.PilaVacia()) {
+			colaAux.Acolar(pila.Tope());
+			pila.Desapilar();
+		}
+
+		while (!colaAux.ColaVacia()) {
+			pila.Apilar(colaAux.Primero());
+			colaAux.Desacolar();
+		}
+	}
+    
+	public static int ContarElementosPila(PilaTDA pila) {
+
+		PilaTDA aux = new PilaTF();
+		aux.InicializarPila();
+
+		UtilidadesPila.CopiarPila(pila, aux);
+
+		int i = 0;
+		while (!aux.PilaVacia()) {
+			aux.Desapilar();
+			i++;
+		}
+		return i;
+	}
+	
+	public static int SumarElementosPila(PilaTDA pila) {
+
+		PilaTDA aux = new PilaTF();
+		aux.InicializarPila();
+
+		UtilidadesPila.CopiarPila(pila, aux);
+
+		int i = 0;
+
+		while (!aux.PilaVacia()) {
+			i = aux.Tope() + i;
+			aux.Desapilar();
+		}
+		return i;
+	}
+
+	public static int CalularPromedioElementosPila(PilaTDA pila) {
+
+		PilaTDA aux = new PilaTF();
+		aux.InicializarPila();
+
+		UtilidadesPila.CopiarPila(pila, aux);
+
+		int cantidad = 0;
+		int suma = 0;
+		while (!aux.PilaVacia()) {
+			suma = aux.Tope() + suma;
+			aux.Desapilar();
+			cantidad++;
+		}
+		return suma / cantidad;
+
+	}
+	
+	public static void InvertirElementosPila(PilaTDA pila) {
+        ColaTDA colaAux=new ColaPU();
+        colaAux.InicializarCola();
+
+
+        while(!pila.PilaVacia()){
+            colaAux.Acolar(pila.Tope());
+            pila.Desapilar();
+        }
+
+        while(!colaAux.ColaVacia()){
+            pila.Apilar(colaAux.Primero());
+            colaAux.Desacolar();
+        }
+    }
+	
 }

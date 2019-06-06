@@ -19,11 +19,17 @@ public class Ejercicio3A {
         a.AgregarElem(10);
         a.AgregarElem(15);
 
+        int elemento = 16;
+        boolean existe = UtilidadesArbolBinario.existeElementoEnABB(a, elemento);
 
-        boolean existe = UtilidadesArbolBinario.existeElementoEnABB(a, 10);
+        
+        if(existe)
+        	System.out.println("El elemento " + elemento + " existe en el siguiente arbol");
+        else 
+        	System.out.println("El elemento " + elemento + " NO existe en el siguiente arbol");
 
-        System.out.println("Existe elemento:"+existe);
-
+        
+        UtilidadesArbolBinario.InOrder(a);
 
     }
 

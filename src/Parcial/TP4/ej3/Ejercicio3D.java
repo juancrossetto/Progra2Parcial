@@ -2,6 +2,7 @@ package Parcial.TP4.ej3;
 
 import API.ABBTDA;
 import implementaciones_dinamicas.*;
+import tools.UtilidadesArbolBinario;
 
 public class Ejercicio3D {
 
@@ -20,17 +21,12 @@ public class Ejercicio3D {
         a.AgregarElem(15);
 
 
-        int menor = Ejercicio3D.menor(a);
+        int menor = UtilidadesArbolBinario.menor(a);
 
-        System.out.println("El menor es:" + menor);
+        System.out.println("El menor elemento es: " + menor);
 
     }
 
-    public static int menor(ABBTDA t) {
-        if (t.HijoIzq().ArbolVacio()) {
-            return t.Raiz();
-        } else {
-            return menor(t.HijoIzq());
-        }
-    }
+    
+    
 }

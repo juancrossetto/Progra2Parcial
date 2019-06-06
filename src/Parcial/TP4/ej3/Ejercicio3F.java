@@ -2,6 +2,7 @@ package Parcial.TP4.ej3;
 
 import API.ABBTDA;
 import implementaciones_dinamicas.*;
+import tools.UtilidadesArbolBinario;
 
 public class Ejercicio3F {
 
@@ -19,18 +20,10 @@ public class Ejercicio3F {
         a.AgregarElem(10);
         a.AgregarElem(15);
 
+        int suma = UtilidadesArbolBinario.sumarElementos(a);
 
-        int suma = Ejercicio3F.sumarElementos(a);
-
-        System.out.println("Elementos sumados:" + suma);
+        System.out.println("Elementos sumados: " + suma);
 
     }
 
-    public static  int sumarElementos(ABBTDA t) {
-        if (t.ArbolVacio()) {
-            return 0;
-        }  else {
-            return (t.Raiz() + sumarElementos(t.HijoIzq()) + sumarElementos(t.HijoDer()));
-        }
-    }
 }

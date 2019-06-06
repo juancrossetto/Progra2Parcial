@@ -2,6 +2,7 @@ package Parcial.TP4.ej3;
 
 import API.ABBTDA;
 import implementaciones_dinamicas.*;
+import tools.UtilidadesArbolBinario;
 
 
 public class Ejercicio3E {
@@ -19,19 +20,13 @@ public class Ejercicio3E {
         a.AgregarElem(30);
         a.AgregarElem(10);
         a.AgregarElem(15);
+        
 
+        int cantElementos = UtilidadesArbolBinario.contarElementos(a);
 
-        int menor = Ejercicio3E.contarElementos(a);
-
-        System.out.println("Elementos contados:" + menor);
+        System.out.println("Elementos contados: " + cantElementos);
 
     }
 
-    public static  int contarElementos(ABBTDA t) {
-        if (t.ArbolVacio()) {
-            return 0;
-        }  else {
-            return (1 + contarElementos(t.HijoIzq()) + contarElementos(t.HijoDer()));
-        }
-    }
+    
 }
