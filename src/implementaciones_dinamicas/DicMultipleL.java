@@ -21,7 +21,6 @@ public class DicMultipleL implements DiccionarioMultipleTDA {
 	@Override
 	public void InicializarDiccionario() {
 		origen = null;
-		// TODO Auto-generated method stub
 
 	}
 

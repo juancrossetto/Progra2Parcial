@@ -167,5 +167,23 @@ public class UtilidadesConjunto {
 			return false;
 		}
     }
+    
+  
+  	public static void MostrarConjunto(ConjuntoTDA C){
+  		if(!C.ConjuntoVacio()){
+  			 ConjuntoLD copia = new ConjuntoLD();
+  			 copia.InicializarConjunto();
+  			 while (!C.ConjuntoVacio()){
+  				 System.out.println(C.Elegir());
+  				 copia.Agregar(C.Elegir());
+  				 C.Sacar(C.Elegir());
+  			 }
+  			 while (!copia.ConjuntoVacio()){
+  				 C.Agregar(copia.Elegir());
+  				 copia.Sacar(copia.Elegir());
+  			 }
+  		} else
+  			System.out.println("Conjunto Vacio");
+  	}
 
 }
