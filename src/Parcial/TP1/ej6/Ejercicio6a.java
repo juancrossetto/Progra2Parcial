@@ -2,6 +2,8 @@ package Parcial.TP1.ej6;
 
 import API.ColaPrioridadTDA;
 import implementaciones_dinamicas.*;
+import tools.UtilidadesCola;
+import tools.UtilidadesColaPrioridad;
 
 public class Ejercicio6a {
 
@@ -49,6 +51,7 @@ public class Ejercicio6a {
             cp2.Desacolar();
         }
 
-        System.out.println("Nueva:{}");//falta imprimir
+        System.out.println("Nueva Cola: ");//falta imprimir
+        UtilidadesColaPrioridad.ImprimirColaPrioridad(nueva);
     }
 }

@@ -47,6 +47,8 @@ public class UtilidadesCola {
         }
     }
 
+    
+    
     public static int UltimoElemento(ColaTDA origen){
         int e=0;
         while(!origen.ColaVacia()){
@@ -65,6 +67,8 @@ public class UtilidadesCola {
             aux.Desacolar();
         }
     }
+    
+    
     
     public static boolean esColaCapicua(ColaTDA c){
     	ColaTDA aux1 = new ColaLD();

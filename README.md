@@ -6,8 +6,8 @@ TP1:
 	4 C   							YA ESTA (Preguntar si esta bien porque no entendi lo de auxiliar)
 	4 E 							YA ESTA (Lo saque del PDF)
 	4 F 							YA ESTA
-	6 COMPLETO(A Y B)			A:	YA ESTA (Preguntar si esta bien Y probarlo, falta imprimir resultado)		
-
+	6 COMPLETO(A Y B)			A:	YA ESTA 		
+								B:  YA ESTA
 TP2: 6 COMPLETO
 
 TP3: 

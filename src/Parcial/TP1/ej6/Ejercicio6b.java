@@ -4,13 +4,9 @@ import API.ColaPrioridadTDA;
 import implementaciones_dinamicas.*;
 
 public class Ejercicio6b {
-
+	
     //Determinar si dos colas con prioridad son identicas, misma cantidad de elementos,prioridad, valor de elementos
     public static void main(String[] args){
-
-
-        //invierto la cola c1 y despues comparo todos los elementos para ver si son iguales
-
 
         ColaPrioridadTDA cp1 = new ColaPrioridadLD();
         ColaPrioridadTDA cp2 = new ColaPrioridadLD();
