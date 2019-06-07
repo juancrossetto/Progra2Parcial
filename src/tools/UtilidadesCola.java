@@ -103,5 +103,16 @@ public class UtilidadesCola {
     	return (p.PilaVacia() && aux1.ColaVacia());
     }
 
+	public static ColaTDA PasarConjuntoACola(ConjuntoTDA c1){	
+		
+		ColaTDA Cola = new ColaPI();
+		Cola.InicializarCola();
+		
+			while (!c1.ConjuntoVacio()){
+				Cola.Acolar(c1.Elegir());
+				c1.Sacar(c1.Elegir());
+			}
+			return Cola;
+	}
     
 }

@@ -1,15 +1,13 @@
 package Parcial.TP3.ej5;
 
-import API.*;
-import implementaciones_dinamicas.*;
+import API.DiccionarioMultipleTDA;
+import implementaciones_dinamicas.DicMultipleL;
 import tools.UtilidadesDiccionario;
 
-public class Ejercicio5A {
+public class Ejercicio5B {
 
-	/*5) A partir del TDA Diccionario, escribir distintos métodos externos que permitan
-	5.1) Dados dos DiccionarioMultipleTDA D1 y D2, generar un DiccionarioMultipleTDA que
-	contenga:*/
-	//las claves presentes en D1 y D2, con todos los elementos asociados a cada clave
+	//Las claves presentes en D1 y D2, con todos los elementos comunes a las claves
+	//coincidentes en ambos
 	public static void main(String[] args) {
 		
 		DiccionarioMultipleTDA D1 = new DicMultipleL();
@@ -41,11 +39,11 @@ public class Ejercicio5A {
 		D2.Agregar(8, 9);
 		D2.Agregar(8, 6);
 		
-		DiccionarioMultipleTDA elementosConClaveRepetida = 
-								UtilidadesDiccionario._5_1a_JuntoDic(D1, D2);
 		
-		UtilidadesDiccionario.MostrarDiccionario(elementosConClaveRepetida);
+		DiccionarioMultipleTDA diccionario = 
+					UtilidadesDiccionario._5_1b_ValoresComunesClavesIguales(D1, D2);
 		
+		UtilidadesDiccionario.MostrarDiccionario(diccionario);
 	}
 
 }

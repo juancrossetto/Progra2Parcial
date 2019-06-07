@@ -11,6 +11,28 @@ public class DicMultipleLD implements DiccionarioMultipleTDA {
 		origen = null;
 	}
 
+//	@Override
+//	public void Agregar(int clave, int valor) {
+//		NodoClaveMultiple nc = Clave2NodoClaveMultpile(clave);
+//		if (nc == null){
+//			nc = new NodoClaveMultiple();
+//			nc.clave = clave;
+//			nc.sig = origen;
+//			origen = nc.sig;
+//			nc.valores = null; 
+//		}
+//		
+//		Nodo nv = nc.valores;
+//		while (nv!=null && nv.info!=valor){
+//			nv = nv.sig;
+//		}
+//		if (nv == null){
+//			nv = new Nodo();
+//			nv.info=valor;
+//			nv.sig = nc.valores;
+//			nc.valores = nv;
+//		}
+//	}
 	@Override
 	public void Agregar(int clave, int valor) {
 		NodoClaveMultiple nc = Clave2NodoClaveMultpile(clave);
@@ -18,25 +40,24 @@ public class DicMultipleLD implements DiccionarioMultipleTDA {
 			nc = new NodoClaveMultiple();
 			nc.clave = clave;
 			nc.sig = origen;
-			origen = nc.sig;
-			nc.valores = null; 
+			origen = nc;
 		}
 		
-		Nodo nv = nc.valores;
-		while (nv!=null && nv.info!=valor){
-			nv = nv.sig;
+		Nodo aux = nc.valores;
+		while (aux!=null && aux.info!=valor){
+			aux = aux.sig;
 		}
-		if (nv == null){
-			nv = new Nodo();
+		if (aux == null){
+			Nodo nv = new Nodo();
 			nv.info=valor;
 			nv.sig = nc.valores;
 			nc.valores = nv;
 		}
 	}
-
+	
 	private NodoClaveMultiple Clave2NodoClaveMultpile(int clave) {
 		NodoClaveMultiple aux = origen;
-		while (aux.clave!=clave && aux != null)
+		while (aux != null && aux.clave!=clave)
 			aux = aux.sig;
 		return aux;
 	}
